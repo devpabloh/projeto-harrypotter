@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body{
+    color: white;
+    margin: 0;
+}
+
+.imagemDeFundo{
+    background-image: url(imagensProjetoHerryPotter/casteloDeHogwarts.jpg);
+    background-size: cover;
+    /* background-position: bottom right; */
+    /* background-repeat: no-repeat; */
+}
+
+.containerMenu {
+    display: flex;
+    justify-content: flex-end;
+    gap: .4em;
+    
+    
+}
+
+/* .containerMenu a{
+    border: 2px solid black;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: darkgray;
+    text-decoration: none;
+    color: darkblue;
+} */
+
+/* segunda opção */
+.containerMenu a{
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    
+}
+
+.containerMenu a:hover{
+    text-decoration: underline;
+    color: grey;
+}
+
+/* .containerMenu a:hover{
+    background-color: white;
+    font-size: 1.1em;
+    color: black;
+} */
+
+.containerConteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+.containerConteudo p{
+    font-family: "Dancing Script";
+    font-size: 2em;
+}
+
+.containerConteudo h1 {
+    font-family: "Acme";
+    font-size: 7em;
+    margin: 0;
+}
+
+.containercasasHerryPotter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.containercasasHerryPotter img{
+    height: 200px;
+    width: 200px;
+}
+
+.casas img:hover{
+    filter: drop-shadow(4px 4px 4px rgba(244, 244, 244, 1));
+    height: 300px;
+    width: 300px;
+}
+
