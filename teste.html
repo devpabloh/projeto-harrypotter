@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #elemento {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+    }
+
+    #quadrado {
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    }
+
+    #texto {
+    font-size: 16px;
+    }
+
+    #elemento:hover + #quadrado {
+    display: block;
+    }
+</style>
+</head>
+<body>
+    <div id="elemento">
+        Passe o mouse aqui
+      </div>
+      <div id="quadrado">
+        <span id="texto">Texto de exemplo</span>
+      </div>
+    
+</body>
+</html>

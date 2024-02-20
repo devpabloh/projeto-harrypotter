@@ -1,91 +1,125 @@
 @charset "UTF-8";
 
+:root {
+
+    --font-family-h1: 'Protest Guerrilla';
+    --font-family-h2: 'Dancing Script';
+}
+
 body{
+    padding: 0;
     color: white;
-    margin: 0;
+    font-family: var(--font-family-h2);
+    
+}
+h1 {
+    font-family: var(--font-family-h1);
+}
+
+h2 {
+    font-family: var(--font-family-h2);
 }
 
 .imagemDeFundo{
     background-image: url(imagensProjetoHerryPotter/casteloDeHogwarts.jpg);
     background-size: cover;
-    /* background-position: bottom right; */
-    /* background-repeat: no-repeat; */
-}
-
-.containerMenu {
-    display: flex;
-    justify-content: flex-end;
-    gap: .4em;
-    
     
 }
 
-/* .containerMenu a{
-    border: 2px solid black;
-    border-radius: 1em;
-    padding: 1em;
-    background-color: darkgray;
-    text-decoration: none;
-    color: darkblue;
-} */
-
-/* segunda opção */
-.containerMenu a{
-    padding: 1em;
-    text-decoration: none;
-    color: white;
-    margin: 0;
-    
-}
-
-.containerMenu a:hover{
-    text-decoration: underline;
-    color: grey;
-}
-
-/* .containerMenu a:hover{
-    background-color: white;
-    font-size: 1.1em;
-    color: black;
-} */
-
-.containerConteudo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-}
-
-
-.containerConteudo p{
-    font-family: "Dancing Script";
-    font-size: 2em;
-}
-
-.containerConteudo h1 {
-    font-family: "Acme";
-    font-size: 7em;
-    margin: 0;
-}
-
-.containercasasHerryPotter{
+/* Cabeçalho / header*/
+.containerMenu{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
+    align-content: center;
+    gap: .3em;
+}
+
+.containerMenu > a {
+    padding: .8em;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-family-h1);
+}
+
+.containerMenu a:hover {
+    text-decoration: underline;
+}
+
+/* Primeira seção - h1 / h2 */
+
+.containerPrimeiraSecao {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerPrimeiraSecao h1{
+    font-size: 8em;
+    margin: 0;
+
+}
+
+.containerPrimeiraSecao h2{
+    font-size: 4em;
+    margin-bottom: 1em;
+
+}
+
+/* Segunda seção - section.containerSegundaSecao / div.casas / img / p.descricao */
+
+.containerSegundaSecao{
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    margin-top: 2em;
+}
+.casas{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
 }
 
-.containercasasHerryPotter img{
-    height: 200px;
+.casas p{
+    margin: 0;
+}
+.casas img{
     width: 200px;
+    height: 200px;
+    opacity: .7;
+    transition: all .4s ease-in-out;
 }
 
-.casas img:hover{
-    filter: drop-shadow(4px 4px 4px rgba(244, 244, 244, 1));
-    height: 300px;
-    width: 300px;
+.casas a{
+    text-decoration: none;
+    color: white;
 }
+
+img:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.corvinal img:hover{
+    filter: drop-shadow(0 0 20px #38D5F2);
+   
+}
+
+.grifinoria img:hover{
+    filter: drop-shadow(0 0 20px #F41F1F);
+    
+}
+
+.sonserina img:hover{
+    filter: drop-shadow(0 0 20px #5AF570);
+    
+}
+.Lufa-Lufa img:hover{
+    filter: drop-shadow(0 0 20px #F2D838);
+    
+}
+
 
